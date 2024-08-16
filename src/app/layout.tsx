@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={clsx(dmSans.className, "antialiased")}>
-        <main className="max-w-10xl md:mx-auto px-4">{children}</main>
+        <main className="max-w-10xl mx-auto">{children}</main>
       </body>
     </html>
   );
