@@ -1,4 +1,3 @@
-import LogoIcon from "../../public/assets/logo.svg";
 import MenuIcon from "../../public/assets/icon-menu.svg";
 import Button from "@/components/Button";
 import Link from "next/link";
@@ -12,8 +11,8 @@ const Header = () => {
           <div className="absolute inset-0 backdrop-blur -z-10 hidden md:block"></div>
           <div>
             <div className="border h-10 w-10 rounded-lg inline-flex justify-center items-center border-white/15">
-              <Link href={'/'}>
-              <p className="font-bold text-xl">BA</p>
+              <Link href={"/"}>
+                <p className="font-bold text-xl">BA</p>
               </Link>
             </div>
           </div>
@@ -22,25 +21,25 @@ const Header = () => {
             <div className="hidden md:block">
               <nav className="flex gap-8 text-sm">
                 <Link
-                  href="#"
+                  href="/"
                   className="text-white/70 hover:text-white transition"
                 >
                   Home
                 </Link>
                 <Link
-                  href="#"
+                  href="programs"
                   className="text-white/70 hover:text-white transition"
                 >
-                  Programmes
+                  Programs
                 </Link>
                 <Link
-                  href="#"
+                  href="blogs"
                   className="text-white/70 hover:text-white transition"
                 >
                   Blogs
                 </Link>
                 <Link
-                  href="#"
+                  href="jobs"
                   className="text-white/70 hover:text-white transition"
                 >
                   Jobs
@@ -48,7 +47,9 @@ const Header = () => {
               </nav>
             </div>
             <div className="flex gap-4 items-center">
-              <Button>Join the community</Button>
+              <Link href="https://discord.gg/HNhfAugqjb">
+                <Button>Join the community</Button>
+              </Link>
               <MenuIcon className="md:hidden" />
             </div>
           </div>
