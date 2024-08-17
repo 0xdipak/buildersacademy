@@ -9,12 +9,12 @@ import { motion } from "framer-motion";
 const LogoSection = () => {
   return (
     <section className="max-w-7xl mx-auto py-20 md:py-24">
-      <div className="container mx-auto flex items-center justify-center">
-        <div className="flex items-center gap-5">
-          <div className="flex-1 md:flex-none">
-            <h2 className="">Trusted and Supported By : </h2>
-          </div>
-          <div className="flex flex-1 overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_20%,black_80%,transparent)]">
+      <div className="bg-black text-white py-[72px] sm:py-24">
+        <div className="container mx-auto flex flex-col items-center">
+          <h2 className="text-xl text-center text-white">
+            Trusted and Supported by the world&apos;s most innovative teams.
+          </h2>
+          <div className="flex overflow-hidden mt-10">
             <motion.div
               initial={{
                 translateX: "-50%",
@@ -27,9 +27,19 @@ const LogoSection = () => {
                 duration: 30,
                 ease: "linear",
               }}
-              className="flex float-none gap-14 pr-20 -translate-x-1/2"
+              className="flex gap-16 flex-none pr-16 -translate-x-1/2"
             >
               {[
+                stacks,
+                national,
+                starknet,
+                lagrandee,
+                bob,
+                stacks,
+                national,
+                starknet,
+                lagrandee,
+                bob,
                 stacks,
                 national,
                 starknet,

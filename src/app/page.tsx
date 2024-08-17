@@ -4,6 +4,7 @@ import Header from "@/sections/Header";
 import Hero from "@/sections/Hero";
 import LogoSection from "@/sections/LogoSection";
 import Services from "@/sections/Services";
+import Testimonials from "@/sections/Testimonials";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
     <Hero/>
     <LogoSection/>
     <Services/>
+    <Testimonials/>
     <CallToAction/>
     <Footer/>
     </>
