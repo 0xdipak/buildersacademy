@@ -1,37 +1,36 @@
 "use client";
 import { useEffect, useRef } from "react";
-import { motion, useMotionTemplate, useMotionValue } from "framer-motion";
-import Image from "next/image";
+import {
+  animate,
+  motion,
+  useMotionTemplate,
+  useMotionValue,
+  ValueAnimationTransition,
+} from "framer-motion";
 
 const ServiceCard = ({
   title,
   description,
-  icon
+  icon,
 }: {
   title: string;
   description: string;
-  icon: any
+  icon: any;
 }) => {
-  const offsetX = useMotionValue(-100);
-  const offsetY = useMotionValue(-100);
+ const xPercentage = useMotionValue(0);
+  const yPercentage = useMotionValue(0);
 
-  const maskImage = useMotionTemplate`radial-gradient(100px 100px at ${offsetX}px ${offsetY}px, black, transparent)`;
-
-  const border = useRef<HTMLDivElement>(null);
+  const maskImage = useMotionTemplate`radial-gradient(100px 100px at ${xPercentage}% ${yPercentage}%, black, transparent)`;
 
   useEffect(() => {
-    const updateMousePosition = (e: MouseEvent) => {
-      if (!border.current) return;
-      const borderRect = border.current?.getBoundingClientRect();
-
-      offsetX.set(e.x - borderRect.x);
-      offsetY.set(e.y - borderRect?.y);
+    const options: ValueAnimationTransition = {
+      duration: 5,
+      repeat: Infinity,
+      ease: "linear",
+      repeatType: "loop",
     };
-
-    window.addEventListener("mousemove", updateMousePosition);
-    return () => {
-      window.removeEventListener("mousemove", updateMousePosition);
-    };
+    animate(xPercentage, [0, 100, 100, 0, 0], options);
+    animate(yPercentage, [0, 0, 100, 100, 0], options);
   }, []);
 
   return (
@@ -39,13 +38,11 @@ const ServiceCard = ({
       <motion.div
         className="absolute inset-0 border-2 border-purple-400 rounded-xl"
         style={{
-          WebkitMaskImage: maskImage,
           maskImage,
         }}
-        ref={border}
       ></motion.div>
       <div className="inline-flex h-14 w-14 bg-white text-black justify-center items-center rounded-lg">
-       <img src={icon} alt={title} />
+        <img src={icon} alt={title} />
       </div>
       <h3 className="mt-6 font-bold">{title}</h3>
       <p className="mt-2 text-white/70">{description}</p>
