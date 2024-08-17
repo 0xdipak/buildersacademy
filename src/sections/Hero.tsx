@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import Button from "@/components/Button";
 import starrsBg from "../../public/assets/stars.png";
 import Link from "next/link";
@@ -6,7 +6,6 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 
 const Hero = () => {
-
   const sectionRef = useRef(null);
   const { scrollYProgress } = useScroll({
     target: sectionRef,
@@ -18,7 +17,6 @@ const Hero = () => {
     [0, 1],
     [-300, 300]
   );
-
 
   return (
     <motion.section

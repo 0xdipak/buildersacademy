@@ -10,7 +10,7 @@ const Header = () => {
         <div className="flex justify-between items-center md:border border-white/15 md:p-2.5 rounded-xl  relative">
           <div className="absolute inset-0 backdrop-blur -z-10 hidden md:block"></div>
           <div>
-            <div className="border h-14 w-14 rounded-lg inline-flex justify-center items-center border-white/15">
+            <div className="border h-14 w-16 rounded-lg inline-flex justify-center items-center border-white/15">
               <Link href={"/"}>
                 <p className="font-bold text-3xl">BA</p>
               </Link>
@@ -19,7 +19,7 @@ const Header = () => {
 
           <div className="flex justify-center items-center gap-8">
             <div className="hidden md:block">
-              <nav className="flex gap-8 text-sm">
+              <nav className="flex gap-8 text-lg">
                 <Link
                   href="/"
                   className="text-white/70 hover:text-white transition"

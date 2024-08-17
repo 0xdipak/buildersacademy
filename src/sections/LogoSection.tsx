@@ -27,7 +27,7 @@ const LogoSection = () => {
                 duration: 30,
                 ease: "linear",
               }}
-              className="flex float-none gap-14 pr-14 -translate-x-1/2"
+              className="flex float-none gap-14 pr-20 -translate-x-1/2"
             >
               {[
                 stacks,

@@ -6,7 +6,7 @@ import clsx from "clsx";
 const dmSans = DM_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Builders Academy",
+  title: "Builders Academy - AI/Web3",
   description: "An organization of Blockchain Development, AI and more.",
 };
 
