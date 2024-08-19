@@ -70,7 +70,7 @@ const AccordianItem = ({
 
 const FaqSection = () => {
   return (
-    <div className="max-w-7xl mx-auto bg-black text-white bg-gradient-to-t from-[#3d2463] to-black py-[72px] sm:py-24">
+    <div className="max-w-7xl mx-auto bg-black text-white bg-gradient-to-t from-[#3d2463] to-black py-[72px] sm:py-24 ">
       <div className="container">
         <h2 className="text-center text-5xl md:text-6xl font-bold tracking-tighter">
           Frequently asked questions
