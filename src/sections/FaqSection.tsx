@@ -22,7 +22,7 @@ const items = [
   },
   {
     question:
-      "Does BuildersAcademy.ai offer any certification upon course completion?",
+      "Does BuildersAcademy offer any certification upon bootcamp completion?",
     answer:
       "Yes, upon successfully completing a bootcamps, BuildersAcademy offers a certificate of completion. This certificate validates your skills and knowledge in blockchain development, AI/ML and can be a valuable addition to your professional portfolio.",
   },
