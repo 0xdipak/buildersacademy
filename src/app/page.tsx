@@ -10,14 +10,12 @@ import FaqSection from "@/sections/FaqSection";
 export default function Home() {
   return (
     <>
-    <Header/>
     <Hero/>
     <LogoSection/>
     <Services/>
     <Testimonials/>
     <FaqSection/>
     <CallToAction/>
-    <Footer/>
     </>
   );
 }

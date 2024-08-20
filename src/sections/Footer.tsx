@@ -9,7 +9,12 @@ const Footer = () => {
         <div className="flex flex-row items-center justify-between gap-4">
           <div className="border h-12 w-14 rounded-lg inline-flex justify-center items-center border-white/15">
             <Link href={"/"}>
-              <p className="font-bold text-2xl text-white">BA</p>
+              <p
+                className="font-bold text-2xl bg-white bg-[radial-gradient(100%_100%_at_top_left,white,white,rgb(74,32,138,.5))]
+        text-transparent bg-clip-text text-center"
+              >
+                BA
+              </p>
             </Link>
           </div>
           <nav className="flex gap-8 text-sm">
