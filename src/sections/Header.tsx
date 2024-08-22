@@ -4,13 +4,13 @@ import Link from "next/link";
 
 const Header = () => {
   return (
-    <header className="max-w-7xl mx-auto py-4 border-b border-white/15 md:border-none sticky top-0 z-10 backdrop-blur md:backdrop-blur-none">
+    <header className="max-w-7xl mx-auto py-4 border-b border-white/15 md:border-none sticky top-0 z-50 backdrop-blur md:backdrop-blur-none">
       <div className="absolute inset-0 backdrop-blur -z-10 md:hidden"></div>
       <div className="container mx-auto">
         <div className="flex justify-between items-center md:border border-white/15 md:p-2.5 rounded-xl  relative">
           <div className="absolute inset-0 backdrop-blur -z-10 hidden md:block"></div>
           <div>
-            <div className="border h-14 w-16 rounded-lg inline-flex justify-center items-center border-white/15">
+            <div className="border h-14 w-16 rounded-xl inline-flex justify-center items-center border-white/15">
               <Link href={"/"}>
                 <p
                   className="font-bold text-3xl bg-white bg-[radial-gradient(100%_100%_at_top_left,white,white,rgb(74,32,138,.5))]

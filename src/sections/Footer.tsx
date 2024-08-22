@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { FaFacebook, FaLinkedin, FaTwitter, FaTelegram } from "react-icons/fa";
+import { FaFacebook, FaLinkedin, FaTelegram } from "react-icons/fa";
 
 
 const Footer = () => {
@@ -7,7 +7,7 @@ const Footer = () => {
     <footer className="max-w-7xl mx-auto py-7 bg-black text-white/60 border-t border-white/20">
       <div className="container mx-auto">
         <div className="flex flex-row items-center justify-between gap-4">
-          <div className="border h-12 w-14 rounded-lg inline-flex justify-center items-center border-white/15">
+          <div className="border h-12 w-14 rounded-xl inline-flex justify-center items-center border-white/15">
             <Link href={"/"}>
               <p
                 className="font-bold text-2xl bg-white bg-[radial-gradient(100%_100%_at_top_left,white,white,rgb(74,32,138,.5))]
