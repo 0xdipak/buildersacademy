@@ -8,46 +8,47 @@ import mahan from "../../public/assets/mahan.jpg";
 import suyan from "../../public/assets/suyan.jpg";
 import prajwal from "../../public/assets/prajwal.jpg";
 import { motion } from "framer-motion";
+import { InfiniteMovingCards } from "@/components/ui/InfiniteMovingCards";
 
 const testimonials = [
   {
-    text: "“Learning blockchain with Ethereum at Builders Academy has been transformative. The practical approach and expert guidance simplify complex topics, making it an outstanding experience.”",
+    text: "“ Learning blockchain with Ethereum at Builders Academy has been transformative. The practical approach and expert guidance simplify complex topics, making it an outstanding experience. ”",
     name: "Amit Baral",
     title: "Student",
     avatarImg: amit,
   },
   {
-    text: "“The ICT Lab’s blockchain mentorship program was a valuable experience, offering in-depth knowledge and guidance from Deepak Dai and Sushil Dai. Balancing it with other commitments was challenging, but their support made it manageable. I'm grateful for this opportunity.”",
+    text: "“ The ICTLab’s blockchain mentorship program was a valuable experience, offering in-depth knowledge from instructors. Balancing it with other commitments was challenging, but their support made it manageable. I'm grateful for this opportunity. ”",
     name: "Anu Magar",
     title: "Student",
     avatarImg: anu,
   },
   {
-    text: "“Before the ICT Lab bootcamp, I knew little about blockchain. The camp provided deep insights into blockchain and Clarity, with expert mentors Deepak Dai and Sushil Dai making learning engaging and supportive. I'm grateful for this valuable experience.”",
+    text: "“ Before the ICT Lab bootcamp, I knew little about blockchain. The camp provided deep insights into blockchain and Clarity, with expert mentors making learning engaging and supportive. I'm grateful for this valuable experience. ”",
     name: "Ashim Karki",
     title: "Student",
     avatarImg: ashim,
   },
   {
-    text: "“Before the bootcamp, I confused blockchain with cryptocurrency. The ICT Lab bootcamp clarified blockchain concepts and the Clarity language, with supportive mentors making the learning experience enriching.”",
+    text: "“ Before the bootcamp, I confused blockchain with cryptocurrency. The ICT Lab bootcamp clarified blockchain concepts and the Clarity language, with supportive mentors making the learning experience enriching. ”",
     name: "Binita Hamal",
     title: "Student",
     avatarImg: binita,
   },
   {
-    text: "“Dipak Sharma’s blockchain class offered clear insights into Solidity, smart contracts, and DApps, with invaluable guidance on React integration and debugging. His respectful teaching fostered a great learning environment. Highly recommended.”",
+    text: "“ Dipak Sharma’s blockchain class offered clear insights into Solidity, smart contracts, and DApps, with invaluable guidance on React integration and debugging. His respectful teaching fostered a great learning environment. Highly recommended. ”",
     name: "Mahan Gurung",
     title: "Student",
     avatarImg: mahan,
   },
   {
-    text: "“Learning blockchain at Builders Academy was enriching, providing deep insights and exposure to new technologies. Engaging with peers and experts, along with dedicated instructors, made it a valuable experience.”",
+    text: "“ Learning blockchain at Builders Academy was enriching, providing deep insights and exposure to new technologies. Engaging with peers and experts, along with dedicated instructors, made it a valuable experience. ”",
     name: "Suyan Thapa",
     title: "Student",
     avatarImg: suyan,
   },
   {
-    text: "“The bootcamp provided deep insights into Blockchain, Solidity, and Web3, with engaging mentors and strong support via Discord and Telegram. I’m grateful to Builders Academy and ICTLab Bagar for this enriching experience.”",
+    text: "“ The bootcamp provided deep insights into Blockchain, Solidity, and Web3, with engaging mentors and strong support via Discord and Telegram. I’m grateful to Builders Academy and ICTLab Bagar for this enriching experience. ”",
     name: "Prajwal Sharma",
     title: "Student",
     avatarImg: prajwal,
@@ -65,7 +66,8 @@ const Testimonials = () => {
           Here's what some of our students have to say about our blockchain
           bootcamp, AI/ML bootcamps, events, and workshops.
         </p>
-        <div className="flex overflow-hidden mt-10 [mask-image:linear-gradient(to_right,transparent,black_20%,black_80%,transaparent)]">
+
+        {/* <div className="flex overflow-hidden mt-10 [mask-image:linear-gradient(to_right,transparent,black_20%,black_80%,transaparent)]">
           <motion.div
             initial={{
               translateX: "-50%",
@@ -111,6 +113,13 @@ const Testimonials = () => {
               </div>
             ))}
           </motion.div>
+        </div> */}
+        <div className="flex flex-col items-center max-lg:mt-10">
+          <InfiniteMovingCards
+            items={testimonials}
+            direction="right"
+            speed="slow"
+          />
         </div>
       </div>
     </section>
