@@ -33,100 +33,100 @@ const cards = [
     id: 1,
     content: (
       <Skeleton
-        title="House in the woods"
+        title="MOU Signing Moment"
         description="A serene and tranquil retreat, this house in the woods offers a peaceful escape from the hustle and bustle of city life."
       />
     ),
     className: "md:col-span-1",
-    thumbnail: "/assets/amit.jpg",
+    thumbnail: "/assets/mou1.png",
   },
   {
     id: 2,
     content: (
       <Skeleton
-        title="House above the clouds"
+        title="Event By Builders Academy"
         description="Perched high above the world, this house offers breathtaking views and a unique living experience. It's a place where the sky meets home, and tranquility is a way of life."
       />
     ),
     className: "col-span-1",
-    thumbnail: "/assets/anu.jpg",
+    thumbnail: "/assets/usmeet.jpg",
   },
   {
     id: 3,
     content: (
       <Skeleton
-        title="Greens all over"
+        title="Bitcoin Conference"
         description="A house surrounded by greenery and nature's beauty. It's the perfect place to relax, unwind, and enjoy life."
       />
     ),
     className: "col-span-1",
-    thumbnail: "/assets/ashim.jpg",
+    thumbnail: "/assets/btc-2.jpg",
   },
   {
     id: 4,
     content: (
       <Skeleton
-        title="Rivers are serene"
+        title="Ethereum Development Bootcamp"
         description="A house by the river is a place of peace and tranquility. It's the perfect place to relax, unwind, and enjoy life."
       />
     ),
     className: "md:col-span-1",
-    thumbnail: "/assets/avatar-1.png",
+    thumbnail: "/assets/ethereum.jpg",
   },
   {
     id: 5,
     content: (
       <Skeleton
-        title="Rivers are serene"
+        title="Workshop At Pokhara Engineering College"
         description="A house by the river is a place of peace and tranquility. It's the perfect place to relax, unwind, and enjoy life."
       />
     ),
     className: "md:col-span-1",
-    thumbnail: "/assets/avatar-2.png",
+    thumbnail: "/assets/pec-1.jpg",
   },
   {
     id: 6,
     content: (
       <Skeleton
-        title="Rivers are serene"
+        title="Workshop At Gandaki University"
         description="A house by the river is a place of peace and tranquility. It's the perfect place to relax, unwind, and enjoy life."
       />
     ),
     className: "md:col-span-1",
-    thumbnail: "/assets/avatar-3.png",
+    thumbnail: "/assets/gandaki.jpg",
   },
   {
     id: 7,
     content: (
       <Skeleton
-        title="Rivers are serene"
+        title="Workshop on Blockchain Development"
         description="A house by the river is a place of peace and tranquility. It's the perfect place to relax, unwind, and enjoy life."
       />
     ),
     className: "md:col-span-1",
-    thumbnail: "/assets/avatar-4.png",
+    thumbnail: "/assets/pec-2.jpg",
   },
   {
     id: 8,
     content: (
       <Skeleton
-        title="Rivers are serene"
+        title="Ethereum Development Bootcamp"
         description="A house by the river is a place of peace and tranquility. It's the perfect place to relax, unwind, and enjoy life."
       />
     ),
     className: "md:col-span-1",
-    thumbnail: "/assets/bob.png",
+    thumbnail: "/assets/class.jpg",
   },
   {
     id: 9,
     content: (
       <Skeleton
-        title="Rivers are serene"
+        title="Bitcoin Conference"
         description="A house by the river is a place of peace and tranquility. It's the perfect place to relax, unwind, and enjoy life."
       />
     ),
     className: "md:col-span-1",
-    thumbnail: "/assets/mahan.jpg",
+    thumbnail: "/assets/btc.jpg",
   },
 ];
 
