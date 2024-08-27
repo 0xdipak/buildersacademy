@@ -25,12 +25,12 @@ const Header = () => {
           <div className="flex justify-center items-center gap-8">
             <div className="hidden md:block">
               <nav className="flex gap-8 text-lg">
-                <Link
+                {/* <Link
                   href="/"
                   className="text-white/70 hover:text-white transition"
                 >
                   Home
-                </Link>
+                </Link> */}
                 <Link
                   href="programs"
                   className="text-white/70 hover:text-white transition"
@@ -44,10 +44,10 @@ const Header = () => {
                   Blogs
                 </Link>
                 <Link
-                  href="jobs"
+                  href="careers"
                   className="text-white/70 hover:text-white transition"
                 >
-                  Jobs
+                  Careers
                 </Link>
               </nav>
             </div>
