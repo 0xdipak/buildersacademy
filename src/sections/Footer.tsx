@@ -37,10 +37,10 @@ const Footer = () => {
               Blogs
             </Link>
             <Link
-              href="jobs"
+              href="careers"
               className="text-white/70 hover:text-white transition"
             >
-              Jobs
+              Careers
             </Link>
           </nav>
 
