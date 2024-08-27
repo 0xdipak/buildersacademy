@@ -4,6 +4,8 @@ import starrsBg from "../../public/assets/stars.png";
 import Link from "next/link";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
+import { TypewriterEffectSmoothDemo } from "@/components/TypeWriter";
+import FooterGrid from '../../public/assets/footer-grid.svg';
 
 const Hero = () => {
   const sectionRef = useRef(null);
@@ -103,12 +105,24 @@ const Hero = () => {
       </motion.div>
 
       <div className="container mx-auto relative mt-10">
-        <h1
+        <motion.h1
+          initial={{
+            opacity: 0,
+            y: 0,
+          }}
+          animate={{
+            opacity: 1,
+            y: 0,
+          }}
+          transition={{
+            duration: 3,
+          }}
           className="text-5xl md:text-7xl md:leading-none font-semibold tracking-tighter bg-white bg-[radial-gradient(100%_100%_at_top_left,white,white,rgb(74,32,138,.5))]
         text-transparent bg-clip-text text-center"
         >
           Builders Academy
-        </h1>
+        </motion.h1>
+        {/* <TypewriterEffectSmoothDemo /> */}
         <p className="text-lg md:text-xl text-white/70 mt-5 text-center max-w-xl mx-auto">
           We specialize in <span className="text-white">Research</span>,
           <span className="text-white"> Development</span>, and{" "}
@@ -118,6 +132,15 @@ const Hero = () => {
           <span className="text-white"> AI</span>, and{" "}
           <span className="text-white"> Security</span>.
         </p>
+
+        <div className="w-full absolute z-50 left-0 -top-72 min-h-96">
+          {/* <FooterGrid /> */}
+          <img
+            src="/assets/footer-grid.svg"
+            alt="grid"
+            className="w-full h-full opacity-50"
+          />
+        </div>
         <div className="flex justify-center mt-5">
           <Link href="/programs">
             <Button>Explore our programs</Button>

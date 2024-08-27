@@ -7,6 +7,7 @@ const Footer = () => {
     <footer className="max-w-7xl mx-auto py-7 bg-black text-white/60 border-t border-white/20">
       <div className="container mx-auto">
         <div className="flex flex-row items-center justify-between gap-4">
+
           <div className="border h-12 w-14 rounded-xl inline-flex justify-center items-center border-white/15">
             <Link href={"/"}>
               <p
@@ -17,7 +18,7 @@ const Footer = () => {
               </p>
             </Link>
           </div>
-          <nav className="flex gap-8 text-sm">
+          <nav className="gap-8 text-sm sm:flex hidden">
             <Link
               href="/"
               className="text-white/70 hover:text-white transition"
@@ -43,6 +44,8 @@ const Footer = () => {
               Jobs
             </Link>
           </nav>
+
+
           <ul className="flex justify-center gap-5">
             <Link
               href={"https://www.facebook.com/profile.php?id=61557169582718"}
@@ -63,6 +66,8 @@ const Footer = () => {
               <FaTelegram className="w-6 h-6" />
             </Link>
           </ul>
+
+
         </div>
         <div className="text-white text-sm text-center mt-10">
           &copy; 2024 Builders Academy

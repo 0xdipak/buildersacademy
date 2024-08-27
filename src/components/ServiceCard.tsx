@@ -1,5 +1,6 @@
 "use client";
 import { useEffect, useRef } from "react";
+import Tilt from "react-parallax-tilt";
 import {
   animate,
   motion,
@@ -34,7 +35,13 @@ const ServiceCard = ({
   }, []);
 
   return (
-    <div className="border border-white/30 px-5 py-10 text-center rounded-xl relative">
+    <Tilt
+      className="border border-white/30 violet-gradient px-5 py-10 text-center rounded-xl relative shadow-card cursor-pointer"
+      // tiltMaxAngleX={45}
+      // tiltMaxAngleY={45}
+      // scale={1}
+      // transitionSpeed={450}
+    >
       <motion.div
         className="absolute inset-0 border-2 border-purple-400 rounded-xl"
         style={{
@@ -46,7 +53,7 @@ const ServiceCard = ({
       </div>
       <h3 className="mt-6 font-bold">{title}</h3>
       <p className="mt-2 text-white/70">{description}</p>
-    </div>
+    </Tilt>
   );
 };
 
