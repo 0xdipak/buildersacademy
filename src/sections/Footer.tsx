@@ -19,12 +19,6 @@ const Footer = () => {
           </div>
           <nav className="gap-8 text-sm sm:flex hidden">
             <Link
-              href="/"
-              className="text-white/70 hover:text-white transition"
-            >
-              Home
-            </Link>
-            <Link
               href="programs"
               className="text-white/70 hover:text-white transition"
             >
@@ -41,6 +35,12 @@ const Footer = () => {
               className="text-white/70 hover:text-white transition"
             >
               Careers
+            </Link>
+            <Link
+              href="/"
+              className="text-white/70 hover:text-white transition"
+            >
+              Resources
             </Link>
           </nav>
 
