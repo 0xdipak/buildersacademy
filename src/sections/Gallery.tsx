@@ -34,7 +34,7 @@ const cards = [
     content: (
       <Skeleton
         title="MOU Signing Moment"
-        description="A serene and tranquil retreat, this house in the woods offers a peaceful escape from the hustle and bustle of city life."
+        description="BuildersAcademy and the National Innovation Center (ICT Lab) have signed an MOU to provide Blockchain Development Trainings and Bootcamps."
       />
     ),
     className: "md:col-span-1",
@@ -45,7 +45,7 @@ const cards = [
     content: (
       <Skeleton
         title="Event By Builders Academy"
-        description="Perched high above the world, this house offers breathtaking views and a unique living experience. It's a place where the sky meets home, and tranquility is a way of life."
+        description="The Builders Academy team is hosting a Bitcoin development-focused Web3 event in the United States."
       />
     ),
     className: "col-span-1",
@@ -56,7 +56,7 @@ const cards = [
     content: (
       <Skeleton
         title="Bitcoin Conference"
-        description="A house surrounded by greenery and nature's beauty. It's the perfect place to relax, unwind, and enjoy life."
+        description="The Builders Academy team attended the Bitcoin Conference 2024 in Nashville."
       />
     ),
     className: "col-span-1",
@@ -67,7 +67,7 @@ const cards = [
     content: (
       <Skeleton
         title="Ethereum Development Bootcamp"
-        description="A house by the river is a place of peace and tranquility. It's the perfect place to relax, unwind, and enjoy life."
+        description="Students of the Ethereum Bootcamp, hosted by Builders Academy in collaboration with NIC,ICT Lab."
       />
     ),
     className: "md:col-span-1",
@@ -78,7 +78,7 @@ const cards = [
     content: (
       <Skeleton
         title="Workshop At Pokhara Engineering College"
-        description="A house by the river is a place of peace and tranquility. It's the perfect place to relax, unwind, and enjoy life."
+        description="Blockchain Development Workshop conducted by the Builders Academy's team at Pokhara College of Engineering."
       />
     ),
     className: "md:col-span-1",
@@ -89,7 +89,7 @@ const cards = [
     content: (
       <Skeleton
         title="Workshop At Gandaki University"
-        description="A house by the river is a place of peace and tranquility. It's the perfect place to relax, unwind, and enjoy life."
+        description="Blockchain Development Workshop conducted by the Builders Academy's team at Gandaki University."
       />
     ),
     className: "md:col-span-1",
@@ -100,7 +100,7 @@ const cards = [
     content: (
       <Skeleton
         title="Workshop on Blockchain Development"
-        description="A house by the river is a place of peace and tranquility. It's the perfect place to relax, unwind, and enjoy life."
+        description="Blockchain Development Workshop conducted by the Builders Academy's team at Pokhara College of Engineering."
       />
     ),
     className: "md:col-span-1",
@@ -111,7 +111,7 @@ const cards = [
     content: (
       <Skeleton
         title="Ethereum Development Bootcamp"
-        description="A house by the river is a place of peace and tranquility. It's the perfect place to relax, unwind, and enjoy life."
+        description="Instructors & Students of the Ethereum Bootcamp, hosted by Builders Academy in collaboration with NIC,ICT Lab."
       />
     ),
     className: "md:col-span-1",
@@ -122,7 +122,7 @@ const cards = [
     content: (
       <Skeleton
         title="Bitcoin Conference"
-        description="A house by the river is a place of peace and tranquility. It's the perfect place to relax, unwind, and enjoy life."
+        description="The Builders Academy team attended the Bitcoin Conference 2024 in Nashville."
       />
     ),
     className: "md:col-span-1",
